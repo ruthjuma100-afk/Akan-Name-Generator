@@ -77,5 +77,19 @@ function calculateDayOfTheWeek(CC,YY,MM,DD){
     console.log("day of the week",date)
     return date
 }
+function formulateName(day,gender){
+    if (day === 0){
+        day = 7
+    }
+    let name ;
+
+    if (gender === "male") {
+        return males[day - 1]
+    } else if (gender === "female") {
+        return females[day - 1]
+    } else {
+        return "Invalid gender"
+    }
+}
 
     
