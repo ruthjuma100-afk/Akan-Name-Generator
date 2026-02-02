@@ -82,4 +82,24 @@
     color: rgb(190, 22, 22);
     cursor: pointer;
 }
+.name{
+    font-size: 1,3em;
+    margin-left: 20px;
+    padding-left: 20px;
+
+}
+#akanName{
+    font-size: 1.3em;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+#result{
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 1.4em;
+}
+#akan-name{
+    font-size: 1.2em;
+    color: rgb(144, 25, 25);
+}
  
