@@ -1,8 +1,5 @@
 # Akan Names Project
 
-## Project Name
-**Akan Names Web Application**
-
 ---
 
 ### Project Description
