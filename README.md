@@ -1,4 +1,4 @@
-# Akan Names Project
+## Akan Names Project
 
 ---
 
