@@ -32,4 +32,28 @@ function retrieveUserInput(){
     console.log("name of the child is ", name)
 }
 
+function validateDate(date){
+    if( date > 0 ){
+        if( date <= 31){
+            alert("Date is correct")
+            return false
+        }else{
+            alert("date can not be greater than 31")
+        }        
+    }else{
+        alert("date can not be less than 1")
+    }
+}
+function validateMonth(month){
+    if( month > 0 ){
+        if( month <= 12){
+            alert("Month is correct")
+        }else{
+            alert("month can not be greater than 12")
+        }        
+    }else{
+        alert("month can not be less than 1")
+    }
+}
+
     
