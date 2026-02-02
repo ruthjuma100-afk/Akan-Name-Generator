@@ -55,4 +55,18 @@
     padding: 5px;
     margin-top: 8px;
 }
+.gender{
+    font-size: 1.5em;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: rgb(177, 3, 3) ;;
+}
+.gender-input{
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
  

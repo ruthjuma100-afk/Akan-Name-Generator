@@ -30,8 +30,9 @@ cd akan-names
 
 Open index.html with your preferred web browser (e.g., Chrome, Firefox, Edge).
 
-4.**Optional: Use a live server (VS Code extension recommended) for auto-reload during development.**
+4. **Optional: Use a live server (VS Code extension recommended) for auto-reload during development.**
 
+---
 ### BDD (Behavior-Driven Development)
 Feature: Akan Name Generator
 
@@ -43,6 +44,7 @@ Feature: Akan Name Generator
 
 -Then the app should display the day of the week they were born and their Akan name.
 
+---
 ### Scenario 2: Missing Inputs
 
 -Given the user does not enter all required fields
@@ -51,6 +53,7 @@ When the user clicks submit:-
 
 Then the app should show an alert prompting the user to fill in the missing information.
 
+---
 ### Scenario 3: Invalid Dates
 
 -Given the user enters a day greater than 31, or a month greater than 12
@@ -59,6 +62,7 @@ When the user clicks submit:-
 
 Then the app should show an alert indicating the invalid date input.
 
+---
 ### Technologies Used
 
 HTML5 – Structure of the webpage
@@ -67,6 +71,7 @@ CSS3 – Styling (via styles.css)
 
 JavaScript (ES6) – Form validation and logic to calculate Akan names.
 
+---
 ### Contact Information
 
 Name: Ruth Juma
@@ -75,6 +80,7 @@ Email: ruthjuma100@gmail.com
 
 GitHub: https://github.com/ruthjuma100-afk
 
+---
 ### License and Copyright Information
 
 License: MIT License
