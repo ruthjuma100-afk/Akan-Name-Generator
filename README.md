@@ -31,7 +31,8 @@ Open index.html with your preferred web browser (e.g., Chrome, Firefox, Edge).
 Use a live server (VS Code extension recommended) for auto-reload during development.
 
 5. **The project is deployed using GitHub Pages.# Live Link:**
--
+
+- https://ruthjuma100-afk.github.io/Akan-Name-Generator/
 
 
 ### BDD (Behavior-Driven Development)
