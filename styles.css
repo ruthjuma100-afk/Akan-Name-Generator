@@ -28,4 +28,31 @@
     margin-left: 20px;
     padding-left: 20px;
 }
+.birthdate{
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:rgb(177, 3, 3) ;
+}
+#year{
+    font-size: 1.1em;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 8px;
+    
+}
+#month{
+    font-size: 1.1em;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 8px;
+
+}
+#day{
+    font-size: 1.1em;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 8px;
+}
  
