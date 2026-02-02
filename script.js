@@ -13,3 +13,8 @@ function retrieveUserInput(){
     if (year.length !== 4){
         alert("Wrong number of year characters")
     }
+    let month = document.getElementById("month").value
+    let day = document.getElementById("day").value
+    console.log(year,month,day)
+    if(!validateDate(day))
+    validateMonth(month)
