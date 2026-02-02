@@ -56,4 +56,18 @@ function validateMonth(month){
     }
 }
 
+function validateGender(){
+    const checkboxes = document.querySelectorAll('input[name="gender"]');
+    let selectedGender;
+    checkboxes.forEach(cb => {
+        if( cb.checked){
+            selectedGender = cb.value
+        }
+    } )
+    if(!selectedGender){
+        alert("Gender not selected")
+    }
+    return selectedGender
+}
+
     
