@@ -18,3 +18,11 @@ function retrieveUserInput(){
     console.log(year,month,day)
     if(!validateDate(day))
     validateMonth(month)
+
+    let gender = validateGender()
+    let cc = year.substring(0,2) //take 1st two characters
+    let yy = year.substring(year.length - 2) 
+    console.log("cc :",cc)
+    console.log("yy :",yy)
+
+    
