@@ -60,6 +60,7 @@ function validateDate(date){
         }        
     }else{
         alert("date can not be less than 1")
+        return "invalid"
     }
 }
 function validateMonth(month){

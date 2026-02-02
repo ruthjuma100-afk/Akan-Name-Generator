@@ -132,4 +132,16 @@
     font-size: 1.2em;
     color: rgb(144, 25, 25);
 }
- 
+ .footer{
+    background-color: rgb(100, 86, 86);
+    border: none;
+    border-radius:8px ;
+    
+ }
+ .footer-content{
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+ }
