@@ -25,4 +25,11 @@ function retrieveUserInput(){
     console.log("cc :",cc)
     console.log("yy :",yy)
 
+    let day_of_the_week = calculateDayOfTheWeek(Number(cc),Number(yy),month,day)
+    let name =  formulateName(day_of_the_week, gender)
+    day_born.textContent = days_of_the_week[day_of_the_week - 1]
+    akan_name.textContent = name
+    console.log("name of the child is ", name)
+}
+
     
