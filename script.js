@@ -69,5 +69,13 @@ function validateGender(){
     }
     return selectedGender
 }
+function calculateDayOfTheWeek(CC,YY,MM,DD){
+    // let raw_date = (((CC/   4 - 2 * CC - 1) + ((5 * YY)/4) + ((26 * (MM + 1))/10)) + DD)
+    let raw_date =((  CC/4 - 2 * CC - 1) + (45 * YY) + (1026 * (MM + 1))) + DD
+    
+    let date =  (raw_date) % 7
+    console.log("day of the week",date)
+    return date
+}
 
     
