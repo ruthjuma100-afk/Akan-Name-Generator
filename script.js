@@ -1,4 +1,5 @@
 const submitBtn = document.getElementById("submit")
+const form = document.getElementById("userform");
 const day_born = document.getElementById("day_born")
 const akan_name = document.getElementById("akan_name")
 const males= ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
@@ -10,6 +11,13 @@ submitBtn.addEventListener("click", ()=> {
     retrieveUserInput()
 })
 
+submitBtn.addEventListener("click", (e) => {
+    e.preventDefault(); // prevent page refresh
+    // Clear all form fields
+    form.reset();
+
+});
+
 function retrieveUserInput(){
     let year = document.getElementById("year").value
     if (year.length !== 4){
@@ -18,13 +26,19 @@ function retrieveUserInput(){
     let month = document.getElementById("month").value
     let day = document.getElementById("day").value
     console.log(year,month,day)
-    
-    if(!validateDate(day))
-    validateMonth(month)
+
+    let isDayvalid =  validateDate(day)
+    if(isDayvalid === "invalid"){
+        return //stops function
+    }
+    let isMonthvalid = validateMonth(month)
+    if(isMonthvalid === "invalid"){
+        return // stops function
+    }
 
     let gender = validateGender()
     let cc = year.substring(0,2) //take 1st two characters
-    let yy = year.substring(year.length - 2) 
+    let yy = year.substring(year.length - 2) // take last two characters
     console.log("cc :",cc)
     console.log("yy :",yy)
 
@@ -38,10 +52,11 @@ function retrieveUserInput(){
 function validateDate(date){
     if( date > 0 ){
         if( date <= 31){
-            alert("Date is correct")
-            return false
+            alert("Date is valid")
+            return "valid"
         }else{
             alert("date can not be greater than 31")
+            return "invalid"
         }        
     }else{
         alert("date can not be less than 1")
@@ -50,25 +65,29 @@ function validateDate(date){
 function validateMonth(month){
     if( month > 0 ){
         if( month <= 12){
-            alert("Month is correct")
+            alert("Month is valid")
+            return "valid"
         }else{
             alert("month can not be greater than 12")
+            return "invalid"
         }        
     }else{
         alert("month can not be less than 1")
+        return "invalid"
     }
 }
 
 function validateGender(){
-    const checkboxes = document.querySelectorAll('input[name="gender"]');
+    const radio = document.querySelectorAll('input[name="gender"]');
     let selectedGender;
-    checkboxes.forEach(cb => {
-        if( cb.checked){
-            selectedGender = cb.value
+    radio.forEach(rd => {
+        if( rd.checked){
+            selectedGender = rd.value
         }
     } )
     if(!selectedGender){
         alert("Gender not selected")
+        return "invalid"
     }
     return selectedGender
 }
@@ -84,7 +103,6 @@ function formulateName(day,gender){
     if (day === 0){
         day = 7
     }
-    let name ;
 
     if (gender === "male") {
         return males[day - 1]
