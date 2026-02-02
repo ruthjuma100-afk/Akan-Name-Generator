@@ -8,3 +8,8 @@ submitBtn.addEventListener("click", ()=> {
     console.log("Submit button clicked")
     retrieveUserInput()
 })
+function retrieveUserInput(){
+    let year = document.getElementById("year").value
+    if (year.length !== 4){
+        alert("Wrong number of year characters")
+    }
